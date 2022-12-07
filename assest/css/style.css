@@ -212,6 +212,14 @@ nav bottom.nav-link {
   border-radius: 4px;
 }
 
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
 @media (max-width: 767px) {
   header nav {
     padding: 1rem;
