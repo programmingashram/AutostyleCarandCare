@@ -214,6 +214,9 @@ nav bottom.nav-link {
 
 .desktop {
   display: block;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .mobile {

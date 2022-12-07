@@ -226,6 +226,8 @@ nav{
 }
 .desktop{
     display: block;
+    height: 500px;
+    object-fit: cover;
 }
 .mobile{
     display: none;
