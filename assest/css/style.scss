@@ -85,6 +85,7 @@ section{
     box-shadow: rgba(0, 0, 0, 0.07);
     background-color: #FFFFFF;
     border-radius: 4px;
+    
     .slotDetails, .slot-title{
         color: $color-black;
     }
@@ -264,5 +265,8 @@ nav{
     }
     .mobile{
         display: block;
+    }
+    .slot-title h4{
+        font-size: 1rem;
     }
 }
