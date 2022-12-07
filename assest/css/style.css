@@ -228,13 +228,22 @@ nav bottom.nav-link {
   section .hero-content .content {
     width: 100%;
   }
-  .hero-content {
-    display: none;
+  section .hero-content .content {
+    margin-top: 70px;
+    padding-left: 1rem;
+    line-height: 21px;
+    width: 100%;
   }
   article nav {
     overflow-x: scroll;
   }
   .nav.nav-tabs {
     width: 175%;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
   }
 }/*# sourceMappingURL=style.css.map */
