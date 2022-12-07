@@ -1,0 +1,240 @@
+.red {
+  color: #E31E25;
+}
+
+.bg-red {
+  background-color: #E31E25;
+}
+
+.light-red, .bg-light-red {
+  background-color: rgba(227, 30, 37, 0.1);
+}
+
+header {
+  z-index: 999999;
+  box-shadow: rgba(227, 30, 37, 0.06);
+}
+header nav .nav-brand {
+  font-size: 1rem;
+  line-height: 0.3;
+}
+header nav .nav li {
+  margin-right: -14px;
+}
+header nav .nav li a {
+  font-size: 0.9rem;
+  color: black;
+}
+header nav .nav li a i {
+  color: #E31E25;
+}
+header nav .nav li a:hover {
+  color: #E31E25;
+}
+
+section video {
+  width: 100%;
+}
+section .hero-content {
+  top: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2705882353);
+}
+section .hero-content .content {
+  margin-top: 70px;
+  padding-left: 2.5rem;
+  line-height: 21px;
+  width: 50%;
+}
+
+.tag-items ul {
+  width: 90%;
+  margin: 0 auto;
+  overflow-x: scroll;
+}
+.tag-items ul li {
+  list-style-type: none;
+  border: 1px solid #E31E25;
+  border-radius: 4px;
+  margin-right: 1rem;
+}
+.tag-items ul::-webkit-scrollbar {
+  width: 4%;
+  height: 4px;
+}
+.tag-items ul::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+.tag-items ul::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+
+.slot {
+  box-shadow: rgba(0, 0, 0, 0.07);
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+.slot .slotDetails, .slot .slot-title {
+  color: black;
+}
+
+.table-responsive {
+  height: 300px;
+}
+.table-responsive .table {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.table-responsive::-webkit-scrollbar {
+  width: 4%;
+  height: 4px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+
+.contact-slot {
+  left: 0;
+  right: 0;
+  width: 80%;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.17);
+  border-radius: 4px;
+  bottom: -31px;
+}
+
+ul::-webkit-scrollbar {
+  width: 4%;
+  height: 4px;
+}
+
+ul::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+ul::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+
+.product-catalouge {
+  overflow-x: scroll;
+  list-style-type: none;
+}
+.product-catalouge li {
+  width: 100%;
+  margin-right: 1rem;
+}
+.product-catalouge li .product-card {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.03);
+  border-radius: 4px;
+  width: 160px;
+}
+.product-catalouge li .product-card .product-img img {
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.product-catalouge li .product-card .product-details .title {
+  font-size: 1rem;
+}
+
+nav .nav-link {
+  color: black;
+}
+nav .nav-link:hover {
+  border: none;
+  color: rgba(227, 30, 37, 0.1);
+}
+nav .nav-link.active {
+  background-color: red !important;
+  color: white !important;
+  border-radius: 0;
+  box-shadow: rgba(0, 0, 0, 0.37);
+}
+nav bottom.nav-link {
+  color: black;
+}
+
+.table-area .table-responsive {
+  height: 500px;
+}
+
+.profile-card {
+  width: 255px;
+}
+.profile-card .profileImage img {
+  border-radius: 4px;
+}
+.profile-card .profile-details {
+  background-color: white;
+  width: 90%;
+  left: 0;
+  right: 0;
+  border-radius: 4px;
+  bottom: 8px;
+  box-shadow: rgb(217, 217, 217);
+}
+.profile-card .badge {
+  top: 5px;
+  right: 5px;
+}
+
+.reviews {
+  width: 280px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.07);
+  border-bottom: 3px solid red;
+}
+.reviews .userIcon img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 42px;
+  border-radius: 50%;
+  height: 41px;
+  margin-right: 13px;
+}
+
+.form-area {
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.09);
+  border-radius: 4px;
+}
+
+@media (max-width: 767px) {
+  header nav {
+    padding: 1rem;
+  }
+  header .nav-menu {
+    display: none;
+  }
+  header .logo {
+    justify-content: flex-start !important;
+  }
+  header .logo img {
+    margin-right: 1rem;
+  }
+  section .hero-content .content {
+    width: 100%;
+  }
+  .hero-content {
+    display: none;
+  }
+  article nav {
+    overflow-x: scroll;
+  }
+  .nav.nav-tabs {
+    width: 175%;
+  }
+}/*# sourceMappingURL=style.css.map */
