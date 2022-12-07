@@ -11,8 +11,10 @@
 }
 
 header {
+  background-color: white;
   z-index: 999999;
   box-shadow: rgba(227, 30, 37, 0.06);
+  padding: 10px;
 }
 header nav .nav-brand {
   font-size: 1rem;
@@ -34,6 +36,11 @@ header nav .nav li a:hover {
 
 section video {
   width: 100%;
+}
+section .hero-banner {
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 section .hero-content {
   top: 0;
@@ -58,6 +65,10 @@ section .hero-content .content {
   border-radius: 4px;
   margin-right: 1rem;
 }
+.tag-items ul li .tags {
+  width: 160px;
+  max-width: 100%;
+}
 .tag-items ul::-webkit-scrollbar {
   width: 4%;
   height: 4px;
@@ -72,9 +83,13 @@ section .hero-content .content {
 }
 
 .slot {
-  box-shadow: rgba(0, 0, 0, 0.07);
+  box-shadow: 0px 6px 5px -5px rgba(128, 128, 128, 0.168627451);
   background-color: #FFFFFF;
   border-radius: 4px;
+}
+.slot .slot-icon img {
+  width: 42px;
+  margin-bottom: 14px;
 }
 .slot .slotDetails, .slot .slot-title {
   color: black;
@@ -122,6 +137,13 @@ ul::-webkit-scrollbar-track {
   border-radius: 10px;
 }
 
+select {
+  padding: 2px;
+  border: 1px solid #E31E25;
+  color: #E31E25;
+  border-radius: 4px;
+}
+
 ul::-webkit-scrollbar-thumb {
   background: gray;
   border-radius: 10px;
@@ -140,11 +162,15 @@ ul::-webkit-scrollbar-thumb {
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.03);
   border-radius: 4px;
   width: 160px;
+  border-bottom: 2px solid rgba(227, 30, 37, 0.1);
 }
 .product-catalouge li .product-card .product-img img {
   height: 150px;
   -o-object-fit: cover;
      object-fit: cover;
+  border-bottom: 2px solid #E31E25;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 .product-catalouge li .product-card .product-details .title {
   font-size: 1rem;
@@ -158,7 +184,7 @@ nav .nav-link:hover {
   color: rgba(227, 30, 37, 0.1);
 }
 nav .nav-link.active {
-  background-color: red !important;
+  background-color: #E31E25 !important;
   color: white !important;
   border-radius: 0;
   box-shadow: rgba(0, 0, 0, 0.37);
