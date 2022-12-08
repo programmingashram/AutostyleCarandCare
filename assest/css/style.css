@@ -11,6 +11,8 @@
 }
 
 header {
+  position: relative;
+  box-shadow: 0px 7px 15px 0px rgba(128, 128, 128, 0.1490196078);
   background-color: white;
   z-index: 999999;
   box-shadow: rgba(227, 30, 37, 0.06);
@@ -25,13 +27,13 @@ header nav .nav li {
 }
 header nav .nav li a {
   font-size: 0.9rem;
-  color: black;
+  color: white;
 }
 header nav .nav li a i {
-  color: #E31E25;
+  color: white;
 }
 header nav .nav li a:hover {
-  color: #E31E25;
+  color: black;
 }
 
 section video {
@@ -88,8 +90,11 @@ section .hero-content .content {
   border-radius: 4px;
 }
 .slot .slot-icon img {
-  width: 42px;
+  width: 55px;
   margin-bottom: 14px;
+}
+.slot .slot-title h4 {
+  font-size: 1.2rem;
 }
 .slot .slotDetails, .slot .slot-title {
   color: black;
@@ -197,6 +202,10 @@ nav bottom.nav-link {
   height: 500px;
 }
 
+.menu-icon {
+  display: none;
+}
+
 .profile-card {
   width: 255px;
 }
@@ -204,6 +213,7 @@ nav bottom.nav-link {
   border-radius: 4px;
 }
 .profile-card .profile-details {
+  border-bottom: 2px solid rgba(227, 30, 37, 0.1);
   background-color: white;
   width: 90%;
   left: 0;
@@ -249,12 +259,56 @@ nav bottom.nav-link {
   display: none;
 }
 
+.slot:hover {
+  transform: translateY(-10px);
+  transition: 0.5s;
+}
+
+.dave {
+  position: absolute;
+  width: 423px;
+  height: 75px;
+  background: #E31E25;
+  top: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
 @media (max-width: 767px) {
-  header nav {
-    padding: 1rem;
+  .menu-icon {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 22px;
+    color: #E31E25;
+  }
+  .active {
+    display: block !important;
+  }
+  .dave {
+    display: none;
+  }
+  header nav .nav li a {
+    font-size: 0.9rem;
+    color: black;
   }
   header .nav-menu {
+    border-top: 1px solid #E31E25;
+    margin-top: 6px;
+    background-color: white;
     display: none;
+    position: absolute;
+    width: 100%;
+    right: 0;
+  }
+  header .nav-menu ul {
+    padding: 0;
+    display: block;
+  }
+  header .nav-menu ul li {
+    display: block;
   }
   header .logo {
     justify-content: flex-start !important;
@@ -287,6 +341,6 @@ nav bottom.nav-link {
        object-fit: cover;
   }
   .slot-title h4 {
-    font-size: 1rem;
+    font-size: 0.9rem !important;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -12,6 +12,8 @@ $color-black:black;
     background-color: $color-light-red;
 }
 header{
+    position: relative;
+    box-shadow: 0px 7px 15px 0px #80808026;
     background-color: white;
     z-index: 999999;
     box-shadow: rgba(227, 30, 37, 0.06);
@@ -26,13 +28,13 @@ header{
                 margin-right: -14px;
                 a{
                     font-size: 0.9rem;
-                    color: black;
+                    color: white;
                     i{
-                        color: #E31E25;
+                        color: white;
                     }
                 }
                 a:hover{
-                    color: #E31E25;
+                    color:black;
                 }
             }
         }
@@ -97,8 +99,11 @@ section{
     background-color: #FFFFFF;
     border-radius: 4px;
     .slot-icon img{
-        width: 42px;
+        width: 55px;
         margin-bottom: 14px;
+    }
+    .slot-title h4{
+        font-size: 1.2rem;
     }
     .slotDetails, .slot-title{
         color: $color-black;
@@ -175,6 +180,7 @@ ul::-webkit-scrollbar-thumb {
                 border-top-right-radius: 4px;
             }
             .product-details{
+              
                 .title{
                     font-size: 1rem;
                 }
@@ -206,6 +212,9 @@ nav{
     }
 }
 
+.menu-icon{
+    display: none;
+}
 
 .profile-card {
     width: 255px;
@@ -213,6 +222,7 @@ nav{
         border-radius: 4px;
     }
     .profile-details{
+        border-bottom: 2px solid $color-light-red;
         background-color: white;
         width: 90%;
         left: 0;
@@ -255,13 +265,56 @@ nav{
 .mobile{
     display: none;
 }
+.slot:hover{
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+.dave{
+    position: absolute;
+    width: 423px;
+    height: 75px;
+    background: $color-red;
+    top: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
 @media(max-width:767px){
+    .menu-icon{
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 22px;
+        color: #E31E25;
+    }
+    .active{
+        display: block !important;
+    }
+    .dave{
+        display: none;
+    }
+    header nav .nav li a {
+        font-size: 0.9rem;
+        color: black;
+    }
     header{
-        nav{
-            padding:1rem;
-        }
         .nav-menu{
+            border-top: 1px solid $color-red;
+            margin-top: 6px;
+            background-color: white;
             display: none;
+            position: absolute;
+            width: 100%;
+            right: 0;
+            ul{
+                padding: 0;
+                display: block;
+                li{
+                    display: block;
+                }
+            }
         }
         .logo{
             justify-content: flex-start !important;
@@ -294,6 +347,6 @@ nav{
         object-fit: cover;
     }
     .slot-title h4{
-        font-size: 1rem;
+        font-size: 0.9rem !important;
     }
 }
