@@ -54,7 +54,7 @@ section{
         background:#00000045;
         .content{
             margin-top: 70px;
-            padding-left: 2.5rem;
+            padding-left: 5.5rem;
             line-height: 21px;
             width: 50%;
         }
@@ -304,6 +304,8 @@ iframe{
   display:block;
   vertical-align:middle;
   border-radius: 4px;
+  object-fit: cover;
+ 
 }
 
 .img-comp-slider {
