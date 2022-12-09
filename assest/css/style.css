@@ -255,10 +255,6 @@ nav bottom.nav-link {
      object-fit: cover;
 }
 
-.mobile {
-  display: none;
-}
-
 .slot:hover {
   transform: translateY(-10px);
   transition: 0.5s;
@@ -274,6 +270,48 @@ nav bottom.nav-link {
   left: 0;
   right: 0;
   z-index: -1;
+}
+
+iframe {
+  width: 100%;
+  height: 350px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.img-comp-container {
+  position: relative;
+  height: 200px; /*should be the same height as the images*/
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.img-comp-img img {
+  display: block;
+  vertical-align: middle;
+  border-radius: 4px;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  border: 3px solid white;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 40px;
+  height: 40px;
+  background-color: #E31E25;
+  opacity: 0.7;
+  border-radius: 50%;
 }
 
 @media (max-width: 767px) {
