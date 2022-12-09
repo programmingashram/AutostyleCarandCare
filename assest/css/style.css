@@ -314,6 +314,10 @@ iframe {
   border-radius: 50%;
 }
 
+.compare-block .img-comp-container {
+  width: 293px;
+}
+
 @media (max-width: 767px) {
   .menu-icon {
     display: block;
