@@ -27,13 +27,13 @@ header nav .nav li {
 }
 header nav .nav li a {
   font-size: 0.9rem;
-  color: white;
+  color: #E31E25;
 }
 header nav .nav li a i {
-  color: white;
+  color: #E31E25;
 }
 header nav .nav li a:hover {
-  color: black;
+  color: rgba(227, 30, 37, 0.1);
 }
 
 section video {

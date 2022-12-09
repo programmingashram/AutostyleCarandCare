@@ -28,13 +28,13 @@ header{
                 margin-right: -14px;
                 a{
                     font-size: 0.9rem;
-                    color: white;
+                    color: $color-red;
                     i{
-                        color: white;
+                        color: $color-red;
                     }
                 }
                 a:hover{
-                    color:black;
+                    color:$color-light-red;
                 }
             }
         }
