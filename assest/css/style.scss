@@ -65,7 +65,11 @@ section{
         }
     }
 }
-
+.bg-img{
+    background-image: url(https://claims.vehiclecare.in/assets/images/bg1.png);
+    background-position: center;
+    background-size: cover;
+}
 .tag-items{
     ul{
         width: 90%;
@@ -315,7 +319,6 @@ iframe{
 
 .img-comp-img img {
   display:block;
-  vertical-align:middle;
   border-radius: 4px;
   object-fit: cover;
  

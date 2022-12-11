@@ -61,6 +61,12 @@ section .hero-content .content {
   width: 50%;
 }
 
+.bg-img {
+  background-image: url(https://claims.vehiclecare.in/assets/images/bg1.png);
+  background-position: center;
+  background-size: cover;
+}
+
 .tag-items ul {
   width: 90%;
   margin: 0 auto;
@@ -308,7 +314,6 @@ iframe {
 
 .img-comp-img img {
   display: block;
-  vertical-align: middle;
   border-radius: 4px;
   -o-object-fit: cover;
      object-fit: cover;
