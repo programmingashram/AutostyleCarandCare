@@ -95,6 +95,13 @@ section .hero-content .content {
   border-radius: 10px;
 }
 
+.oldcars .product-card {
+  width: 287px !important;
+}
+.oldcars .product-card .product-details {
+  font-size: 12px;
+}
+
 .slot {
   box-shadow: 0px 6px 5px -5px rgba(128, 128, 128, 0.168627451);
   background-color: #FFFFFF;
