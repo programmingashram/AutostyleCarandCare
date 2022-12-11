@@ -102,6 +102,13 @@ section .hero-content .content {
   font-size: 12px;
 }
 
+.w-widget {
+  width: 40px;
+  position: fixed;
+  right: 54px;
+  bottom: 27px;
+}
+
 .slot {
   box-shadow: 0px 6px 5px -5px rgba(128, 128, 128, 0.168627451);
   background-color: #FFFFFF;
