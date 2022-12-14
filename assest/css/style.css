@@ -437,6 +437,27 @@ iframe {
 }
 
 @media (max-width: 767px) {
+  .inSlot-section {
+    display: block !important;
+  }
+  .inSlot-section .slotMain {
+    width: 50%;
+    float: left;
+    margin: 0px 0px 5px 0px;
+    padding: 2px;
+  }
+  .inSlot-section .inSlot {
+    display: block !important;
+    width: 100%;
+    float: left;
+    text-align: center;
+  }
+  .inSlot-section .inSlot div {
+    display: block !important;
+  }
+  .inSlot-details .title {
+    width: 100% !important;
+  }
   .offer-table:focus {
     transform: scale(1.3);
     scroll-behavior: smooth;
