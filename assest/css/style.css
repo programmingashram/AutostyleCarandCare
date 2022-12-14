@@ -254,9 +254,10 @@ ul::-webkit-scrollbar-thumb {
 }
 .offerCardSection ul li:hover {
   box-shadow: 0px 5px 10px 1px rgba(128, 128, 128, 0.17);
-  transition: 0.3s;
+  transition: 0.3s ease-in;
   background: linear-gradient(25deg, rgba(255, 0, 0, 0.768627451), rgba(255, 0, 0, 0));
   color: white;
+  transform: scale(1.1);
 }
 .offerCardSection ul li:hover .offerCardControl {
   display: block;
@@ -325,6 +326,8 @@ nav bottom.nav-link {
   border-radius: 4px;
   bottom: 8px;
   box-shadow: rgb(217, 217, 217);
+  font-size: 0.7rem;
+  line-height: 0;
 }
 .profile-card .badge {
   top: 5px;
@@ -436,6 +439,10 @@ iframe {
   color: #E31E25;
 }
 
+.inSlot-contact a, .offerCardSection a {
+  pointer-events: none;
+}
+
 @media (max-width: 767px) {
   .inSlot-section {
     display: block !important;
@@ -457,6 +464,11 @@ iframe {
   }
   .inSlot-details .title {
     width: 100% !important;
+    font-size: 0.6rem;
+    margin-top: 13px;
+  }
+  .inSlot-icon img {
+    margin-right: 0px !important;
   }
   .offer-table:focus {
     transform: scale(1.3);
