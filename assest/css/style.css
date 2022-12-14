@@ -236,7 +236,7 @@ ul::-webkit-scrollbar-thumb {
   width: 130px;
 }
 .offerCardSection ul li a .offerTitle .title {
-  font-size: 1rem !important;
+  font-size: 0.8rem !important;
 }
 .offerCardSection ul li a .offerdescription {
   line-height: 1;
@@ -248,8 +248,7 @@ ul::-webkit-scrollbar-thumb {
 .offerCardSection ul li:hover {
   box-shadow: 0px 5px 10px 1px rgba(128, 128, 128, 0.17);
   transition: 0.3s;
-  transform: scale(1.07);
-  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(255, 0, 0));
+  background: linear-gradient(25deg, rgba(255, 0, 0, 0.768627451), rgba(255, 0, 0, 0));
   color: white;
 }
 .offerCardSection ul li:hover .offerCardControl {

@@ -238,7 +238,7 @@ ul::-webkit-scrollbar-thumb {
                    
                 }
                 .offerTitle .title{
-                    font-size: 1rem !important;
+                    font-size: 0.8rem !important;
                 }
                 .offerdescription{
                     line-height: 1;
@@ -252,8 +252,7 @@ ul::-webkit-scrollbar-thumb {
         li:hover{
             box-shadow: 0px 5px 10px 1px rgb(128 128 128 / 17%);
             transition: 0.3s;
-            transform: scale(1.07);
-            background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+            background: linear-gradient(25deg, #ff0000c4, #f000);
             color:white;
         }
         li:hover .offerCardControl{
