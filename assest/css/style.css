@@ -193,7 +193,7 @@ ul::-webkit-scrollbar-thumb {
 }
 .product-catalouge li {
   width: 100%;
-  margin-right: 1rem;
+  margin-right: 3rem;
 }
 .product-catalouge li .product-card {
   background: #FFFFFF;
@@ -452,6 +452,11 @@ iframe {
 }
 
 @media (max-width: 767px) {
+  .snackbar-area {
+    bottom: 62px;
+    left: 10px !important;
+    right: 10px;
+  }
   .article-img {
     width: 100%;
   }
@@ -645,6 +650,40 @@ iframe {
   background-color: rgba(27, 149, 196, 0.1411764706);
 }
 
+.snackbar-area {
+  bottom: 62px;
+  left: 37px;
+}
+
+.snackbar-icon img {
+  width: 100px !important;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  height: 97px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.close {
+  right: 12px;
+  top: 6px;
+}
+
+.snbackbar-items {
+  background: white;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.17);
+  -webkit-backface-visibility: visible !important;
+          backface-visibility: visible !important;
+  -webkit-animation: bounce 2s ease;
+          animation: bounce 2s ease;
+}
+
+.snackbar-details a {
+  font-size: 0.7rem;
+}
+
 .inSlot-details .title {
   width: 227px;
   white-space: nowrap;
@@ -653,6 +692,29 @@ iframe {
   font-weight: 800;
 }
 
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
 .inSlot-section::-webkit-scrollbar {
   width: 4%;
   height: 4px;

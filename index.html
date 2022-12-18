@@ -1476,7 +1476,49 @@
         </div>
     </div>
 </article>
-  
+
+
+<div class="snackbar-area  position-fixed">
+   <div class="snackbar position-relative">
+        <i class="fa fa-close close position-absolute"></i>
+        <div class="snbackbar-items d-flex  align-items-center">
+            <div class="snackbar-icon me-4">
+                <img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2022/10/07/16651308578938.jpg" alt="" class="w-100">
+            </div>
+            <div class="snackbar-details pe-4">
+                
+                <h6>Get Car <span class="red">Insaurance</span></h6>
+                <a href="#" class="nav-link">Read More</a>
+                
+            </div>
+        </div>
+   </div>
+   <div class="snackbar position-relative">
+        <i class="fa fa-close close position-absolute"></i>
+        <div class="snbackbar-items d-flex  align-items-center">
+            <div class="snackbar-icon me-4">
+                <img src="https://m.media-amazon.com/images/I/A12j0BL7IoL._AC_SL1500_.jpg" alt="" class="w-100">
+            </div>
+            <div class="snackbar-details pe-4">
+                <h6>Best Car <span class="red">Products</span></h6>
+                <a href="#" class="nav-link">Buy Now</a>
+            </div>
+        </div>
+   </div>
+
+  <div class="position-relative snackbar">
+        <i class="fa fa-close close position-absolute"></i>
+        <div class="snbackbar-items d-flex  align-items-center">
+            <div class="snackbar-icon me-4">
+                <img src="https://nintendo-power.com/wp-content/uploads/2022/02/1644902932_How-to-download-YouTube-video-to-your-computer.jpg" alt="" class="w-100">
+            </div>
+            <div class="snackbar-details pe-4">
+                <h6>Watch <span class="red">Our works</span></h6>
+                <a href="#" class="nav-link">Go Now</a>
+            </div>
+        </div>
+  </div>
+</div>
 
 <article class="mt-5">
     <div class="container">
@@ -1613,6 +1655,14 @@
 <script src="mediaelement-and-player.min.js"></script>
 
 <script>
+    var close = document.getElementsByClassName("close");
+    var i;
+    for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+        var div = this.parentElement;
+        div.style.display = "none";
+    }
+    }
     function initComparisons() {
         var x, i;
         /*find all elements with an "overlay" class:*/

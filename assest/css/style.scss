@@ -218,7 +218,7 @@ ul::-webkit-scrollbar-thumb {
     list-style-type: none;
     li{
         width: 100%;
-        margin-right:1rem;
+        margin-right:3rem;
         .product-card{
             background: #FFFFFF;
             box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.03);
@@ -472,6 +472,11 @@ iframe{
     width: 60%;
 }
 @media(max-width:767px){
+    .snackbar-area {
+        bottom: 62px;
+        left: 10px !important;
+        right: 10px;
+    }
     .article-img{
         width: 100%;
     }
@@ -664,15 +669,48 @@ iframe{
 //     background-color:$color-22;
 // }
 
-
-
+.snackbar-area{
+    bottom: 62px;
+    left: 37px;
+}
+.snackbar-icon img{
+    width: 100px !important;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    height: 97px;
+    object-fit: cover;
+}
+.close{
+    right: 12px;
+    top: 6px;
+}
+.snbackbar-items{
+    background: white;
+    border-radius: 12px;
+   margin-bottom: 10px;
+   box-shadow: 0px 4px 11px rgb(0 0 0 / 17%);
+   backface-visibility: visible !important;
+    animation: bounce 2s ease;
+}
+.snackbar-details a{
+    font-size: 0.7rem;
+}
 .inSlot-details .title{
     width: 227px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
     font-weight: 800;
+    
 }
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+    40% {transform: translateY(-30px);} 
+    60% {transform: translateY(-15px);} 
+ } 
+ 
+
 // .inSlot-section{
 //     width: 100%;
 //     overflow-x: scroll;
