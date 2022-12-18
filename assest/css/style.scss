@@ -364,17 +364,21 @@ nav{
 
 
 .reviews{
-    width: 280px;
+    width: 400px;
     background-color: white;
     border-radius: 4px;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.07);
-    border-bottom: 3px solid red;
     .userIcon img{
         object-fit: cover;
-        width: 42px;
+        width: 100%;
         border-radius: 50%;
-        height: 41px;
         margin-right: 13px;
+    }
+    .quots{
+        font-size: 0.7rem;
+    }
+    .quots-img{
+        width: 17px;
     }
 }
 
@@ -464,8 +468,13 @@ iframe{
 .inSlot-contact a, .offerCardSection a{
     pointer-events: none;
 }
-
+.article-img{
+    width: 60%;
+}
 @media(max-width:767px){
+    .article-img{
+        width: 100%;
+    }
     .inSlot-section{
         display: block !important;
         .slotMain{
