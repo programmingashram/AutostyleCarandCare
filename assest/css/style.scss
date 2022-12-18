@@ -1,7 +1,28 @@
 $color-red: #E31E25;
 $color-light-red: rgba(227, 30, 37, 0.1);
 $color-black:black;
-
+$color-white:white;
+$color-01:rgba(0, 152, 158, 0.14);
+$color-02:rgba(255, 251, 154, 0.14);
+$color-03:rgba(36, 77, 157, 0.14);
+$color-04:rgba(197, 40, 31, 0.14);
+$color-05:#40379224;
+$color-06:#40379224;
+$color-07:#FFFFFF;
+$color-08:#083F8824;
+$color-09:rgba(75, 73, 104, 0.14);
+$color-10:#00397424;
+$color-11:#00397424;
+$color-12:#A02A7F24;
+$color-13:#F5721824;
+$color-14:#1E007424;
+$color-15:#EE313724;
+$color-16:#0069E324;
+$color-17:#2E319224;
+$color-18:#16498E24;
+$color-19:#02A44E24;
+$color-20:#801A7E24;
+$color-21:#1B95C424;
 
 body{
     font-family: 'Lora', serif;
@@ -64,6 +85,11 @@ section{
             width: 50%;
         }
     }
+    .head-title-v1>h3{
+        margin-top: 30px;
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
 }
 .bg-img{
     background-image: url(https://claims.vehiclecare.in/assets/images/bg1.png);
@@ -94,6 +120,7 @@ section{
     ul::-webkit-scrollbar-track {
         box-shadow: inset 0 0 5px grey; 
         border-radius: 10px;
+        display: none;
       }
        
    
@@ -112,7 +139,7 @@ section{
     }
 }
 .w-widget{
-    width: 40px;
+    width: 60px;
     position: fixed;
     right: 54px;
     bottom: 27px;
@@ -120,13 +147,14 @@ section{
 .slot{
     box-shadow: 0px 6px 5px -5px #8080802b;
     background-color: #FFFFFF;
-    border-radius: 4px;
+    border-radius: 10px;
+    text-align: center;
     .slot-icon img{
-        width: 55px;
+        width: 70px;
         margin-bottom: 14px;
     }
     .slot-title h4{
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
     .slotDetails, .slot-title{
         color: $color-black;
@@ -358,6 +386,9 @@ iframe{
     }
   
 }
+.wrap span{
+    color: #E31E25;
+}
 
 @media(max-width:767px){
     .menu-icon{
@@ -428,3 +459,151 @@ iframe{
         font-size: 0.9rem !important;
     }
 }
+.text-decoration-none{
+    color:$color-black;
+}
+.inSlot-contact a{
+    font-size: 0.8rem;
+}
+
+.bg-1{
+    background-color:$color-01;
+}
+.bg-2{
+    background-color:$color-02;
+}
+.bg-3{
+    background-color:$color-03;
+}
+
+.bg-4{
+    background-color:$color-04;
+}
+
+.bg-5{
+    background-color:$color-05;
+}
+.bg-6{
+    background-color:$color-06;
+}
+.bg-7{
+    background-color:$color-07;
+    border: 1px solid #80808036;
+}
+
+.bg-8{
+    background-color:$color-08;
+}
+
+.bg-9{
+    background-color:$color-09;
+}
+
+.bg-10{
+    background-color:$color-10;
+}
+
+.bg-11{
+    background-color:$color-11;
+}
+
+.bg-12{
+    background-color:$color-12;
+}
+
+.bg-13{
+    background-color:$color-13;
+}
+
+.bg-14{
+    background-color:$color-14;
+}
+
+.bg-15{
+    background-color:$color-15;
+}
+
+.bg-16{
+    background-color:$color-16;
+}
+
+.bg-17{
+    background-color:$color-17;
+}
+
+.bg-18{
+    background-color:$color-18;
+}
+.bg-19{
+    background-color:$color-19;
+}
+
+.bg-20{
+    background-color:$color-20;
+}
+
+.bg-21{
+    background-color:$color-21;
+}
+// .bg-22{
+//     background-color:$color-22;
+// }
+
+
+
+.inSlot-details .title{
+    width: 227px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-weight: 800;
+}
+// .inSlot-section{
+//     width: 100%;
+//     overflow-x: scroll;
+//     scroll-behavior: smooth;
+// }
+.inSlot-section::-webkit-scrollbar {
+    width: 4%;
+    height: 4px;
+    background-color: #80808026;
+  }
+
+// }
+// // example page\\
+// .article-img{
+//     width: 60%;
+// }
+// .card-wrap{
+//     background: #FFFFFF;
+//     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.03);
+//     border-radius: 12px;
+//     border: 1px solid #80808066;
+// }
+// .card-img{
+//     border-radius: 100%;
+//     width: 90%;
+//     height: 88px;
+//     margin: 3px 10px;
+// }
+// .card-wrapper>h4,h6{
+//     margin-left: 5px;
+// }
+// .insurance-card {
+// width: 300px;
+// height: 100px;
+// box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.03);
+// border: 1px solid #80808066;
+// }
+// .wrapper a{
+//     font-size: 12px;
+// }
+// .wrapper span{
+//     font-size: 16px;
+// }
+// .bg-01{
+//     background: rgba(0, 152, 158, 0.14);
+// border-radius: 8px;
+// }
+
+
