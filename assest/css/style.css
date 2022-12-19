@@ -496,6 +496,10 @@ iframe {
   width: 60%;
 }
 
+.contact-snack a {
+  font-size: 0.9rem !important;
+}
+
 @media (max-width: 767px) {
   .hide {
     display: none;
@@ -518,7 +522,7 @@ iframe {
             backdrop-filter: blur(15px);
     height: 100%;
     width: 100;
-    top: 209px;
+    top: 151px;
     right: 0;
     left: 0 !important;
     padding-top: 40px;
