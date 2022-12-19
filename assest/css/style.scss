@@ -134,9 +134,42 @@ section{
         border-radius: 10px;
     }
 }
+.footer-menu a{
+    font-size: 0.7rem;
+   
+}
+.facebook i,.whatsapp i, .youtube i{
+    text-align: center;
+    padding: 1rem;
+    background: blue;
+    font-size: 1rem;
+    border-radius: 12px;
+    width: auto;
+    color: white;
+}
+.whatsapp i{
+    background: green;
+    color:white;
+}
+.youtube i{
+    background: red;
+    color:white;
+}
+.wheel-animate img{
+    width: 140px;
+    position: absolute;
+    top: 248px;
+    right: 257px;
+}
+.tags img{
+    width: 31px;
+    height: 35px;
+}
+.tags span{
+    font-size: 0.8rem;
+}
 .oldcars{
     .product-card{
-        
         width: 287px !important;
         .product-details{
             font-size: 12px;
