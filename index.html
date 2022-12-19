@@ -94,7 +94,7 @@
             </div>
         </nav>
     </header>
-    <section class="mb-4">
+    <section class="mb-4 position-relative">
         <div class="video-area position-relative">
            
             <!-- <video
@@ -148,10 +148,9 @@
                 </div>
              </div>
         </div>
+       
     </section>
-    <div class="wheel-animate">
-        <img src="https://i.pinimg.com/originals/f4/8f/ea/f48fea746a31d600627605dcfe902b58.png" alt="" class="position-absolute">
-    </div>
+   
  <div class="services-tags mt-4 mb-5">
         <div class="tag-items">
            
@@ -164,31 +163,31 @@
                 </li>
                 <li>
                     <div class="tags d-flex align-items-center justify-content-around p-1">
-                        <img src="assest/images/tags-carwashing.svg" alt="" class="me-2">
+                        <img src="https://vehiclecare.in/images/service/washingdetailing.svg" alt="" class="me-2">
                         <span>Car  Washing</span>
                     </div>
                 </li>
                 <li>
                     <div class="tags d-flex align-items-center justify-content-around p-1">
-                        <img src="assest/images/tags-carwashing.svg" alt="" class="me-2">
+                        <img src="https://vehiclecare.in/images/service/dentingpainting.svg" alt="" class="me-2">
                         <span>Denting Panting</span>
                     </div>
                 </li>
                 <li>
                     <div class="tags d-flex align-items-center justify-content-around p-1">
-                        <img src="assest/images/tags-carwashing.svg" alt="" class="me-2">
+                        <img src="https://vehiclecare.in/images/service/batteriessupport.svg" alt="" class="me-2">
                         <span>Battery Charging</span>
                     </div>
                 </li>
                 <li>
                     <div class="tags d-flex align-items-center justify-content-around p-1">
-                        <img src="assest/images/tags-carwashing.svg" alt="" class="me-2">
+                        <img src="https://vehiclecare.in/images/service/wheelcare.svg" alt="" class="me-2">
                         <span>Wheel Alignment</span>
                     </div>
                 </li>
                 <li>
                     <div class="tags d-flex align-items-center justify-content-around p-1">
-                        <img src="assest/images/tags-carwashing.svg" alt="" class="me-2">
+                        <img src="https://vehiclecare.in/images/service/wheelcare.svg" alt="" class="me-2">
                         <span>Wheel Repair</span>
                     </div>
                 </li>
@@ -198,7 +197,6 @@
                         <span>Interior Cleaning</span>
                     </div>
                 </li>
-             
             </ul>
         </div>
   </div>
@@ -1204,11 +1202,11 @@
                         </div>
                     </div>
                 </div>
-                <a href="insouranse.html" class="btn btn-danger mt-4 d-block w-auto">
-                    View More
-                </a>
+                
             </div>
-           
+            <a href="insouranse.html" class="btn btn-danger mt-4 ms-3 d-block w-auto">
+                View More
+            </a>
         </div>
     </div>
 </article>
@@ -1514,6 +1512,7 @@
             </div>
         </div>
   </div>
+  <div class="drop"></div>
 </div>
 
 <article class="mt-5">
@@ -1750,8 +1749,14 @@
        
          menuTrig.addEventListener('click', function(){
             menu.classList.toggle('active');
-         })
-
+         });
+    </script>
+    <script>
+        let drop = document.querySelector('.drop');
+        let snackbar = document.querySelector('.snackbar-area');
+        drop.addEventListener('click', function(){
+            snackbar.classList.toggle("hide");
+        })
     </script>
 </body>
 </html>

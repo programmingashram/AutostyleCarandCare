@@ -179,7 +179,7 @@ section{
 .w-widget{
     width: 60px;
     position: fixed;
-    right: 54px;
+    right: 10px;
     bottom: 27px;
 }
 .slot{
@@ -509,10 +509,40 @@ iframe{
     width: 60%;
 }
 @media(max-width:767px){
+    .hide{
+        display: none;
+    }
+    .drop{
+        width: 100px;
+        height: 5px;
+        background: #ffffff9e;
+        border-radius: 13px;
+        position: absolute;
+        top: 0;
+        left: 129px;
+        right: 50%;
+    }
+    .snackbar-area{
+        bottom: 62px;
+        left: 37px;
+        padding: 10px;
+        backdrop-filter: blur(15px);
+        height: 100%;
+        width: 100;
+        top: 209px;
+        right: 0;
+        left: 0 !important;
+        padding-top: 40px;
+        z-index: 9999;
+    }
+    .product-catalouge li {
+        width: auto;
+        margin-right: 1rem;
+    }
     .snackbar-area {
         bottom: 62px;
-        left: 10px !important;
-        right: 10px;
+        left: 0px !important;
+        right: 0px;
     }
     .article-img{
         width: 100%;
