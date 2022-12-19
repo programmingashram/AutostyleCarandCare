@@ -238,7 +238,7 @@ ul::-webkit-scrollbar-thumb {
 }
 .product-catalouge li {
   width: 100%;
-  margin-right: 3rem;
+  margin-right: 1rem;
 }
 .product-catalouge li .product-card {
   background: #FFFFFF;
@@ -501,6 +501,10 @@ iframe {
 }
 
 @media (max-width: 767px) {
+  .animate-1, .slotMain {
+    -webkit-animation: none !important;
+            animation: none !important;
+  }
   .hide {
     display: none;
   }
@@ -636,6 +640,9 @@ iframe {
   .slot-title h4 {
     font-size: 0.9rem !important;
   }
+  .slotMain {
+    margin-right: 0;
+  }
 }
 .text-decoration-none {
   color: black;
@@ -730,6 +737,39 @@ iframe {
   background-color: rgba(27, 149, 196, 0.1411764706);
 }
 
+.inSlot-section {
+  overflow-x: scroll;
+}
+
+.slotMain {
+  -webkit-animation: scrol linear 10s infinite;
+          animation: scrol linear 10s infinite;
+  position: relative;
+}
+
+.animate-1 {
+  -webkit-animation: scrol linear 9s infinite;
+          animation: scrol linear 9s infinite;
+  position: relative;
+}
+
+@-webkit-keyframes scrol {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -10%;
+  }
+}
+
+@keyframes scrol {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -10%;
+  }
+}
 .snackbar-area {
   bottom: 62px;
   left: 37px;
@@ -760,6 +800,10 @@ iframe {
           animation: bounce 2s ease;
 }
 
+.slotMain {
+  margin-right: 1rem;
+}
+
 .snackbar-details a {
   font-size: 0.7rem;
 }
@@ -770,6 +814,7 @@ iframe {
   text-overflow: ellipsis;
   overflow: hidden;
   font-weight: 800;
+  font-size: 0.7rem;
 }
 
 @-webkit-keyframes bounce {

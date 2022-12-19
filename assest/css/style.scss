@@ -255,7 +255,7 @@ ul::-webkit-scrollbar-thumb {
     list-style-type: none;
     li{
         width: 100%;
-        margin-right:3rem;
+        margin-right:1rem;
         .product-card{
             background: #FFFFFF;
             box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.03);
@@ -512,6 +512,9 @@ iframe{
     font-size: 0.9rem !important;
 }
 @media(max-width:767px){
+    .animate-1, .slotMain{
+        animation: none !important;
+    }
     .hide{
         display: none;
     }
@@ -648,7 +651,11 @@ iframe{
     .slot-title h4{
         font-size: 0.9rem !important;
     }
+    .slotMain{
+        margin-right: 0;
+    }
 }
+
 .text-decoration-none{
     color:$color-black;
 }
@@ -738,6 +745,26 @@ iframe{
 // .bg-22{
 //     background-color:$color-22;
 // }
+.inSlot-section{
+    overflow-x: scroll;
+    
+}
+.slotMain{
+    animation: scrol linear 10s infinite;
+    position: relative;
+}
+.animate-1{
+    animation: scrol linear 9s infinite;
+    position: relative;
+}
+@keyframes scrol {
+    from {
+      left: 0%;
+    }
+    to {
+      left: -10%;
+    }
+}
 
 .snackbar-area{
     bottom: 62px;
@@ -762,6 +789,9 @@ iframe{
    backface-visibility: visible !important;
     animation: bounce 2s ease;
 }
+.slotMain{
+    margin-right: 1rem;
+}
 .snackbar-details a{
     font-size: 0.7rem;
 }
@@ -771,7 +801,7 @@ iframe{
     text-overflow: ellipsis;
     overflow: hidden;
     font-weight: 800;
-    
+    font-size: 0.7rem;  
 }
 
 @keyframes bounce {
