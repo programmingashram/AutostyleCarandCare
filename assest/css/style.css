@@ -719,4 +719,8 @@ iframe {
   width: 4%;
   height: 4px;
   background-color: rgba(128, 128, 128, 0.1490196078);
+}
+
+.service-img {
+  transform: scale(1.2);
 }/*# sourceMappingURL=style.css.map */
