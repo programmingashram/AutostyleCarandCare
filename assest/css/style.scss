@@ -512,6 +512,9 @@ iframe{
     font-size: 0.9rem !important;
 }
 @media(max-width:767px){
+    .snackbar-area{
+        display: none !important;
+    }
     .animate-1, .slotMain{
         animation: none !important;
     }
