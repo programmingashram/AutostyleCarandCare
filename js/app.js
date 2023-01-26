@@ -1,74 +1,79 @@
-var close = document.getElementsByClassName("close");
-var i;
-for (i = 0; i < close.length; i++) {
-close[i].onclick = function() {
-    var div = this.parentElement;
-    div.style.display = "none";
-}
-
 
 
 let team = {
   member:{
-    name:"Himanshu Gaoutam",
-    tenchTeam:"Technincal Engineer",
-img:"https://www.mecgale.com/wp-content/uploads/2017/08/dummy-profile.png",
-    exp:"3 Years Exp."
+    name:"Saiyyad Rahamttulla ",
+    tenchTeam:"Senior Mechanic",
+img:"./assest/images/team-member-1.png",
+    exp:"15 Years Exp."
 },
 member1:{
-    name:"shivam Gaoutam",
-    tenchTeam:"Technincal Engineer",
-img:"https://www.mecgale.com/wp-content/uploads/2017/08/dummy-profile.png",
-    exp:"5 Years Exp."
+    name:"Md Tinku",
+    tenchTeam:"Junior Mechanic",
+img:"./assest/images/team-member-2.png",
+    exp:"13 Years Exp."
 },
 member2:{
-    name:"abul hamid pandit",
-    tenchTeam:"Technincal Engineer",
-img:"https://www.mecgale.com/wp-content/uploads/2017/08/dummy-profile.png",
-    exp:"9 Years Exp."
+    name:"MD Sameer ",
+    tenchTeam:"Junior Mechanic",
+img:"./assest/images/team-member-3.jpg",
+    exp:"13 Years Exp."
 },
 membe3:{
-    name:"Abid tandekar",
-    tenchTeam:"Technincal Engineer",
-img:"https://www.mecgale.com/wp-content/uploads/2017/08/dummy-profile.png",
-    exp:"8 Years Exp."
+    name:"Shahnawaj Ahmad",
+    tenchTeam:"Senior Painter",
+img:"./assest/images/team-member-4.jpg",
+    exp:"10 Years Exp."
 },
 member4:{
-    name:"ajay nagar",
-    tenchTeam:"Technincal Engineer",
-img:"https://www.mecgale.com/wp-content/uploads/2017/08/dummy-profile.png",
-    exp:"12 Years Exp."
+    name:"MD Meraz",
+    tenchTeam:"Painter",
+img:"./assest/images/team-member-5.jpg",
+    exp:"08 Years Exp."
 },
 member5:{
-    name:"pawan bhanvaer",
-    tenchTeam:"Technincal Engineer",
-img:"https://www.mecgale.com/wp-content/uploads/2017/08/dummy-profile.png",
-    exp:"23 Years Exp."
+    name:"Shahzad Alam",
+    tenchTeam:"Painter",
+img:"./assest/images/team-member-6.jpg",
+    exp:"06 Years Exp."
 },
 member6:{
-    name:"sandeep mahesawari",
-    tenchTeam:"Technincal Engineer",
-img:"https://www.mecgale.com/wp-content/uploads/2017/08/dummy-profile.png",
-    exp:"7 Years Exp."
+    name:"MD Sajid",
+    tenchTeam:"Senior Denter",
+img:"./assest/images/team-member-7.jpg",
+    exp:"10 Years Exp."
 },
 member7:{
-    name:"Gaoutam Adani",
-    tenchTeam:"Technincal Engineer",
-img:"https://www.mecgale.com/wp-content/uploads/2017/08/dummy-profile.png",
-    exp:"6 Years Exp."
+    name:"MD Sajid",
+    tenchTeam:" Denter",
+img:"./assest/images/team-member-8.jpg",
+    exp:"5 Years Exp."
 },
 member8:{
-    name:"mukesh ambani",
-    tenchTeam:"Technincal Engineer",
-img:"https://www.mecgale.com/wp-content/uploads/2017/08/dummy-profile.png",
-    exp:"31 Years Exp."
+    name:"Gagan Choudhary",
+    tenchTeam:"Insurances Services Provider",
+img:"./assest/images/team-member-9.jpg",
+    exp:"07 Years Exp."
 },
 member9:{
-    name:"bata ",
-    tenchTeam:"Technincal Engineer",
-img:"https://www.mecgale.com/wp-content/uploads/2017/08/dummy-profile.png",
-    exp:"12 Years Exp."
+    name:"Abhisekh Yadav",
+    tenchTeam:"Store Incharge",
+img:"./assest/images/team-member-10.jpg",
+    exp:"2 Years Exp."
 },
+member10:{
+    name:"Ajay Gokhle",
+    tenchTeam:"Accessories Incharege",
+img:"./assest/images/team-member-11.jpg",
+    exp:"2 Years Exp."
+},
+member11:{
+    name:"Prerna Kochar",
+    tenchTeam:"Senior Accountent",
+img:"./assest/images/team-member-12.jpg",
+    exp:"1 Years Exp."
+},
+
 }
 let teamList = document.getElementById("team-list");
 
@@ -158,7 +163,55 @@ for(let u in customer){
   </li>  
   `;
 }
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
 }
+}
+
+
+
+// let Details = {
+//     1:{
+//       title:"Car Washing ",
+    
+//   },
+//   2:{
+//     title:"Wheel Care ",
+   
+// },
+// 3:{
+//     title:"AC Repairs ",
+  
+  
+// },
+// 4:{
+//     title:"Denting & Painting",
+   
+// },
+// 5:{
+//     title:"Custom Repairs",
+
+// 6:{
+//     title:"Insurance Works",
+   
+// },
+// 7:{
+//     title:"Battery Charging",
+//     u1:"All Company Insurance Clanime Works",
+//     u2:"Fast Tag Recharge / Registration ",  
+//     u3:"PUC Works",
+// },
+// }
+
+
+
+
+
+
 function initComparisons() {
     var x, i;
     /*find all elements with an "overlay" class:*/
@@ -255,3 +308,5 @@ function initComparisons() {
     gtag('js', new Date());
 
     gtag('config', 'G-RXCKKD5EB4');
+
+

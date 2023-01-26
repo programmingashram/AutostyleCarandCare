@@ -2,42 +2,82 @@ let CardDetails = {
     Car :{
         img : './img/washingdetailing.svg',
         title : "Car Washing" ,
-        para : " Lorem iparasum dolor sit amet consectetur adiparaisicing elit."
+        u1:"Top Wash",
+        u2:"Interior Cleaning",  
+        u3:"Dash Board Polish",
+        u4:"Tyre Polishing",
+        u5:"Vaccum Cleaning",
+        u6:"/",
     },
     wheel :{
         img : 'https://vehiclecare.in/images/service/wheelcare.svg',
         title : "wheel care" ,
-        para : " Lorem iparasum dolor sit amet consectetur adiparaisicing elit."
+        u1:"Wheel Alignment",
+        u2:"Wheel Balancing",  
+        u3:"Tyre Changing",
+        u4:"Apollo Tyre",
+        u5:"Ceat Tyre",
+        u6:"/",
     },
     carac :{
         img : 'https://vehiclecare.in/images/service/acrepair.svg',
-        title : "Ac repare" ,
-        para : " Lorem iparasum dolor sit amet consectetur adiparaisicing elit."
+        title : "Ac repairs" ,
+        u1:"All Ac Works",
+        u2:"AC Vaccuming",  
+        u3:"Ac Leaking Checks",
+        u4:"Ac Gas filling",
+        u5:"/",
+        u6:"/",
     }, 
     Battery :{
         img :  'https://vehiclecare.in/images/service/batteriessupport.svg',
         title : "Battery changing" ,
-        para : " Lorem iparasum dolor sit amet consectetur adiparaisicing elit."
+        u1:"/",
+        u2:"/",
+        u3:"/",
+        u4:"/",
+        u5:"/",
+        u6:"/",
     },
     Denting :{
         img : 'https://vehiclecare.in/images/service/dentingpainting.svg',
         title : "Denting Panting" ,
-        para : " Lorem iparasum dolor sit amet consectetur adiparaisicing elit."
+        u1:"Car Denting",
+        u2:"Car Painting",  
+        u3:"Rubbing Polish",
+        u4:"Ceremic Coating",
+        u5:"Head Light Cleaning",
+        u6:"Teflon Coating",
     },
     Custom :{
         img : 'https://vehiclecare.in/images/service/customrepairs.svg',
         title : "Custom Repairs" ,
-        para : " Lorem iparasum dolor sit amet consectetur adiparaisicing elit."
+        u1:"General Serviceing ",
+        u2:"Full Suspention Works",  
+        u3:"Full Engine Works",
+        u4:"All Body Parts",
+        u5:"All Mechanical Works Done",
+        u6:"/",
     },
     Insurance :{
         img : 'https://vehiclecare.in/images/service/insuranceclaim.svg',
-        title : "Insurances claim" ,
-        para : " Lorem iparasum dolor sit amet consectetur adiparaisicing elit."
+        title : "Insurance claim" ,
+        u1:"All Company Insurance Claim's Works",
+         u2:"Fast Tag Recharge / Registration ",  
+         u3:"PUC Works",
+         u4:"/",
+         u5:"/",
+         u6:"/",
     },
     pariodic :{
         img : 'https://vehiclecare.in/images/service/periodicservice.svg',
         title : "Pariodic Services" ,
-        para : " Lorem iparasum dolor sit amet consectetur adiparaisicing elit."
+        u1:"/",
+        u2:"/",
+        u3:"/",
+        u4:"/",
+        u5:"/",
+        u6:"/",
     }
 }
 
@@ -146,7 +186,7 @@ for(a in CardDetails){
     `;
 
     serviceList.innerHTML += `
-    <div class="col-md-3 col-6">
+    <div class="col-md-3 ">
         <a href="#" class="slot-main text-decoration-none">
             <div class="slot p-3 mb-4">
                 <div class="slot-icon">
@@ -155,14 +195,41 @@ for(a in CardDetails){
                 <div class="slot-title">
                     <h4>${CardDetails[a].title}</h4>
                 </div>
-                <div class="slotDetails">
-                    <p>${CardDetails[a].para}</p>
+                <div class="slotDetails services-list">
+                    <ul class="navs">
+                        <li class="navs" list="${CardDetails[a].u1}">
+                              ${CardDetails[a].u1}
+                        </li>
+                        <li  list="${CardDetails[a].u2}">
+                             ${CardDetails[a].u2}
+                        </li>
+                        <li  list="${CardDetails[a].u3}">
+                               ${CardDetails[a].u3}
+                        </li>
+                        <li  list="${CardDetails[a].u4}">
+                                  ${CardDetails[a].u4}
+                         </li>
+                        <li  list="${CardDetails[a].u5}">
+                                ${CardDetails[a].u5}
+                        </li>
+                        <li  list="${CardDetails[a].u5}">
+                              ${CardDetails[a].u6}
+                       </li>
+                    </ul>
                 </div>
             </div>
         </a>
     </div>
     `;
+    let validate = document.querySelectorAll('[list="/"]');
+        for(let x = 0; x < validate.length; x++){
+            console.log(validate[x])
+    validate[x].style.display = "none";
 }
+   
+}
+
+
 for(b in offers){
     offerList.innerHTML += `
     <li>
@@ -183,7 +250,7 @@ for(b in offers){
                 </div>
                 <div class="offerCardControl">
                     <button class="btn btn-danger" type="button">
-                        Get It Now
+                        <a href="https://chat.whatsapp.com/HrYQMeOaSVb7btHH5OuSsG" class="nav-link">Get It Now</a> 
                     </button>
                 </div>
             </div>
@@ -208,8 +275,6 @@ for(c in compare){
     `;
 }
 for(d in buy){
-    console.log(buy[d]);
-
     SellCarList.innerHTML +=`
     <li>
         <div class="product-card">

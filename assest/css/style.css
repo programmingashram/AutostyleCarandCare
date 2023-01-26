@@ -382,6 +382,9 @@ nav bottom.nav-link {
 }
 .profile-card .profileImage img {
   border-radius: 4px;
+  height: 260px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .profile-card .profile-details {
   border-bottom: 2px solid rgba(227, 30, 37, 0.1);
@@ -765,35 +768,6 @@ iframe {
   overflow-x: scroll;
 }
 
-.slotMain {
-  -webkit-animation: scrol linear 10s infinite;
-          animation: scrol linear 10s infinite;
-  position: relative;
-}
-
-.animate-1 {
-  -webkit-animation: scrol linear 9s infinite;
-          animation: scrol linear 9s infinite;
-  position: relative;
-}
-
-@-webkit-keyframes scrol {
-  from {
-    left: 0%;
-  }
-  to {
-    left: -10%;
-  }
-}
-
-@keyframes scrol {
-  from {
-    left: 0%;
-  }
-  to {
-    left: -10%;
-  }
-}
 .snackbar-area {
   bottom: 62px;
   left: 37px;
@@ -820,8 +794,6 @@ iframe {
   box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.17);
   -webkit-backface-visibility: visible !important;
           backface-visibility: visible !important;
-  -webkit-animation: bounce 2s ease;
-          animation: bounce 2s ease;
 }
 
 .slotMain {
@@ -841,29 +813,6 @@ iframe {
   font-size: 0.7rem;
 }
 
-@-webkit-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
-}
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
-}
 .info {
   position: absolute;
   top: 6px;
@@ -887,4 +836,23 @@ iframe {
 
 .service-img {
   transform: scale(1.2);
+}
+
+[list="/"] {
+  display: none;
+}
+
+.navs {
+  list-style: none;
+  text-align: start;
+}
+.navs li {
+  display: inline-block;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  border: 1.2px solid rgba(227, 30, 37, 0.7882352941);
 }/*# sourceMappingURL=style.css.map */
