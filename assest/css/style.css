@@ -528,7 +528,7 @@ iframe {
   .snackbar-area {
     display: none !important;
   }
-  .animate-1, .slotMain {
+  .slotMain {
     -webkit-animation: none !important;
             animation: none !important;
   }
