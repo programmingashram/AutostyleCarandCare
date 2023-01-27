@@ -196,7 +196,7 @@ for(a in CardDetails){
                     <h4>${CardDetails[a].title}</h4>
                 </div>
                 <div class="slotDetails services-list">
-                    <ul class="navs">
+                    <ol class="navs">
                         <li class="navs" list="${CardDetails[a].u1}">
                               ${CardDetails[a].u1}
                         </li>
@@ -215,7 +215,7 @@ for(a in CardDetails){
                         <li  list="${CardDetails[a].u5}">
                               ${CardDetails[a].u6}
                        </li>
-                    </ul>
+                    </ol>
                 </div>
             </div>
         </a>

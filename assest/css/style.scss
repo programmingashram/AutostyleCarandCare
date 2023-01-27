@@ -118,6 +118,7 @@ section{
     background-position: center;
     background-size: cover;
 }
+
 .tag-items{
     ul{
         width: 90%;
@@ -205,6 +206,7 @@ section{
     background-color: #FFFFFF;
     border-radius: 10px;
     text-align: center;
+    height: 270px;
     .slot-icon img{
         width: 70px;
         margin-bottom: 14px;
@@ -532,6 +534,15 @@ iframe{
     font-size: 0.9rem !important;
 }
 @media(max-width:767px){
+    .wrap{
+        flex-wrap: wrap;
+    }
+    .Uc2NEf {
+        height: 550px;
+    }
+    .offercard{
+        width: 150px;
+    }
     .snackbar-area{
         display: none !important;
     }
@@ -841,6 +852,7 @@ iframe{
     text-align: start;
     li{
         display: inline-block;
+        line-height: 25px;
        
     }
 }

@@ -186,6 +186,7 @@ section .head-title-v1 > h3 {
   background-color: #FFFFFF;
   border-radius: 10px;
   text-align: center;
+  height: 270px;
 }
 .slot .slot-icon img {
   width: 70px;
@@ -525,6 +526,15 @@ iframe {
 }
 
 @media (max-width: 767px) {
+  .wrap {
+    flex-wrap: wrap;
+  }
+  .Uc2NEf {
+    height: 550px;
+  }
+  .offercard {
+    width: 150px;
+  }
   .snackbar-area {
     display: none !important;
   }
@@ -848,6 +858,7 @@ iframe {
 }
 .navs li {
   display: inline-block;
+  line-height: 25px;
 }
 
 iframe {
