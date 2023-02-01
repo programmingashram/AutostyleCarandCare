@@ -174,6 +174,9 @@ close[i].onclick = function() {
 
 
 
+
+
+
 // let Details = {
 //     1:{
 //       title:"Car Washing ",
