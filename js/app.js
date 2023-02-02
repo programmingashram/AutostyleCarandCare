@@ -75,6 +75,7 @@ img:"./assest/images/team-member-12.jpg",
 },
 
 }
+
 let teamList = document.getElementById("team-list");
 
 for(let i in team){
@@ -163,57 +164,15 @@ for(let u in customer){
   </li>  
   `;
 }
+
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
-close[i].onclick = function() {
-    var div = this.parentElement;
-    div.style.display = "none";
+    close[i].onclick = function() {
+        var div = this.parentElement;
+        div.style.display = "none";
+    }
 }
-}
-
-
-
-
-
-
-// let Details = {
-//     1:{
-//       title:"Car Washing ",
-    
-//   },
-//   2:{
-//     title:"Wheel Care ",
-   
-// },
-// 3:{
-//     title:"AC Repairs ",
-  
-  
-// },
-// 4:{
-//     title:"Denting & Painting",
-   
-// },
-// 5:{
-//     title:"Custom Repairs",
-
-// 6:{
-//     title:"Insurance Works",
-   
-// },
-// 7:{
-//     title:"Battery Charging",
-//     u1:"All Company Insurance Clanime Works",
-//     u2:"Fast Tag Recharge / Registration ",  
-//     u3:"PUC Works",
-// },
-// }
-
-
-
-
-
 
 function initComparisons() {
     var x, i;
@@ -290,7 +249,7 @@ function initComparisons() {
         slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
         }
     }
-    }
+}
 
     initComparisons();
     let menu = document.getElementById('mobile-menu');
@@ -314,36 +273,36 @@ function initComparisons() {
 
 
 
-function setCookie(cname, cvalue, exdays) {
-    const d = new Date();
-    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-    let expires = "expires="+d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
+// function setCookie(cname, cvalue, exdays) {
+//     const d = new Date();
+//     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+//     let expires = "expires="+d.toUTCString();
+//     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+// }
 
-function getCookie(cname) {
-let name = cname + "=";
-let ca = document.cookie.split(';');
-for(let i = 0; i < ca.length; i++) {
-    let c = ca[i];
-    while (c.charAt(0) == ' ') {
-    c = c.substring(1);
-    }
-    if (c.indexOf(name) == 0) {
-    return c.substring(name.length, c.length);
-    }
-}
-return "";
-}
+// function getCookie(cname) {
+// let name = cname + "=";
+// let ca = document.cookie.split(';');
+// for(let i = 0; i < ca.length; i++) {
+//     let c = ca[i];
+//     while (c.charAt(0) == ' ') {
+//     c = c.substring(1);
+//     }
+//     if (c.indexOf(name) == 0) {
+//     return c.substring(name.length, c.length);
+//     }
+// }
+// return "";
+// }
 
-function checkCookie() {
-let user = getCookie("username");
-if (user != "") {
-    alert("Welcome again " + user);
-} else {
-    user = prompt("Please enter your name:", "");
-    if (user != "" && user != null) {
-    setCookie("username", user, 365);
-    }
-}
-}
+// function checkCookie() {
+// let user = getCookie("username");
+// if (user != "") {
+//     alert("Welcome again " + user);
+// } else {
+//     user = prompt("Please enter your name:", "");
+//     if (user != "" && user != null) {
+//     setCookie("username", user, 365);
+//     }
+// }
+// }
