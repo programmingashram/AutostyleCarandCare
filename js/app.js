@@ -253,9 +253,11 @@ function initComparisons() {
 
     initComparisons();
     let menu = document.getElementById('mobile-menu');
+    let menu2 = document.getElementById('mobile-menu2');
   
     menuTrig.addEventListener('click', function(){
        menu.classList.toggle('active');
+       menu2.classList.toggle('active');
     });
 
 
