@@ -55,6 +55,9 @@ body{
 .light-red, .bg-light-red{
     background-color: $color-light-red;
 }
+.un-s{
+    object-fit: unset !important;
+}
 header{
     position: relative;
     box-shadow: 0px 7px 15px 0px #80808026;

@@ -36,6 +36,11 @@ body {
   background-color: rgba(227, 30, 37, 0.1);
 }
 
+.un-s {
+  -o-object-fit: unset !important;
+     object-fit: unset !important;
+}
+
 header {
   position: relative;
   box-shadow: 0px 7px 15px 0px rgba(128, 128, 128, 0.1490196078);
@@ -539,8 +544,7 @@ iframe {
     display: none !important;
   }
   .slotMain {
-    -webkit-animation: none !important;
-            animation: none !important;
+    animation: none !important;
   }
   .hide {
     display: none;
