@@ -872,4 +872,10 @@ iframe {
   -o-object-fit: fill;
      object-fit: fill;
   box-shadow: 11px 38px 47px 0px rgba(227, 30, 37, 0.2196078431);
+}
+
+@media (max-width: 767px) {
+  .founder-details {
+    margin-bottom: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */
