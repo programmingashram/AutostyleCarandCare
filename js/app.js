@@ -1,7 +1,6 @@
 
-
 let team = {
-  member:{
+member:{
     name:"Saiyyad Rahamttulla ",
     tenchTeam:"Senior Mechanic",
 img:"./assest/images/team-member-1.png",

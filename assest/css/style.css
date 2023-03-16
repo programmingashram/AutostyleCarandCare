@@ -801,7 +801,7 @@ iframe {
   top: 6px;
 }
 
-.snbackbar-items {
+.claim-doc, .snbackbar-items {
   background: white;
   border-radius: 12px;
   margin-bottom: 10px;
@@ -832,6 +832,10 @@ iframe {
   top: 6px;
   right: 26px;
   color: black;
+}
+
+.list {
+  width: 35%;
 }
 
 .inSlot-section::-webkit-scrollbar {

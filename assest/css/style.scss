@@ -800,7 +800,7 @@ iframe{
     right: 12px;
     top: 6px;
 }
-.snbackbar-items{
+.claim-doc,.snbackbar-items{
     background: white;
     border-radius: 12px;
    margin-bottom: 10px;
@@ -828,7 +828,9 @@ iframe{
     right: 26px;
     color: black;
  }
-
+.list{
+    width: 35%;
+}
 
 .inSlot-section::-webkit-scrollbar {
     width: 4%;
