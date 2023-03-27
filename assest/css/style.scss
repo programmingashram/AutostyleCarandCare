@@ -55,6 +55,9 @@ body{
 .light-red, .bg-light-red{
     background-color: $color-light-red;
 }
+.un-s{
+    object-fit: unset !important;
+}
 header{
     position: relative;
     box-shadow: 0px 7px 15px 0px #80808026;
@@ -797,7 +800,7 @@ iframe{
     right: 12px;
     top: 6px;
 }
-.snbackbar-items{
+.claim-doc,.snbackbar-items{
     background: white;
     border-radius: 12px;
    margin-bottom: 10px;
@@ -819,15 +822,15 @@ iframe{
     font-weight: 800;
     font-size: 0.7rem;  
 }
-
-
  .info{
     position: absolute;
     top: 6px;
     right: 26px;
     color: black;
  }
-
+.list{
+    width: 35%;
+}
 
 .inSlot-section::-webkit-scrollbar {
     width: 4%;
@@ -853,7 +856,6 @@ iframe{
     li{
         display: inline-block;
         line-height: 25px;
-       
     }
 }
 iframe {
@@ -862,4 +864,9 @@ iframe {
     border: 1.2px solid rgba(227, 30, 37, 0.7882352941);
     object-fit: fill;
     box-shadow: 11px 38px 47px 0px #e31e2538;
+}
+@media (max-width: 767px){
+    .founder-details{
+        margin-bottom: 30px;
+    }
 }

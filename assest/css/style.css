@@ -36,6 +36,11 @@ body {
   background-color: rgba(227, 30, 37, 0.1);
 }
 
+.un-s {
+  -o-object-fit: unset !important;
+     object-fit: unset !important;
+}
+
 header {
   position: relative;
   box-shadow: 0px 7px 15px 0px rgba(128, 128, 128, 0.1490196078);
@@ -539,8 +544,7 @@ iframe {
     display: none !important;
   }
   .slotMain {
-    -webkit-animation: none !important;
-            animation: none !important;
+    animation: none !important;
   }
   .hide {
     display: none;
@@ -797,7 +801,7 @@ iframe {
   top: 6px;
 }
 
-.snbackbar-items {
+.claim-doc, .snbackbar-items {
   background: white;
   border-radius: 12px;
   margin-bottom: 10px;
@@ -828,6 +832,10 @@ iframe {
   top: 6px;
   right: 26px;
   color: black;
+}
+
+.list {
+  width: 35%;
 }
 
 .inSlot-section::-webkit-scrollbar {
@@ -868,4 +876,10 @@ iframe {
   -o-object-fit: fill;
      object-fit: fill;
   box-shadow: 11px 38px 47px 0px rgba(227, 30, 37, 0.2196078431);
+}
+
+@media (max-width: 767px) {
+  .founder-details {
+    margin-bottom: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */
