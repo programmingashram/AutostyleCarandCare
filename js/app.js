@@ -4,20 +4,20 @@ let team = {
   member:{
     name:"Saiyyad Rahamttulla ",
     tenchTeam:"Senior Mechanic",
-img:"./assest/images/team-member-1.png",
+    img:"./assest/images/team-member-1.png",
     exp:"15 Years Exp."
 },
 member1:{
     name:"Md Tinku",
     tenchTeam:"Junior Mechanic",
-img:"./assest/images/team-member-2.png",
-    exp:"13 Years Exp."
+    img:"./assest/images/team-member-2.png",
+    exp:"6 Years Exp."
 },
 member2:{
     name:"MD Sameer ",
     tenchTeam:"Junior Mechanic",
-img:"./assest/images/team-member-3.jpg",
-    exp:"13 Years Exp."
+    img:"./assest/images/team-member-3.jpg",
+    exp:"6 Years Exp."
 },
 membe3:{
     name:"Shahnawaj Ahmad",

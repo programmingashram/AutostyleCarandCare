@@ -258,22 +258,22 @@ for(b in offers){
     </li>
     `;
 }
-for(c in compare){
-    console.log(compare[c].new.img);
-    compareCarsList.innerHTML += `
-    <li>
-        <div class="img-comp-container">
-            <div class="img-comp-img">
-                <img src="${compare[c].new.img}" width="300" height="200">
+// for(c in compare){
+//     console.log(compare[c].new.img);
+//     compareCarsList.innerHTML += `
+//     <li>
+//         <div class="img-comp-container">
+//             <div class="img-comp-img">
+//                 <img src="${compare[c].new.img}" width="300" height="200">
                 
-            </div>
-            <div class="img-comp-img img-comp-overlay">
-                <img src="${compare[c].old.img}" width="300" height="200">
-            </div>
-        </div>
-    </li>
-    `;
-}
+//             </div>
+//             <div class="img-comp-img img-comp-overlay">
+//                 <img src="${compare[c].old.img}" width="300" height="200">
+//             </div>
+//         </div>
+//     </li>
+//     `;
+// }
 for(d in buy){
     SellCarList.innerHTML +=`
     <li>
