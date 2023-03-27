@@ -31,7 +31,7 @@ let CardDetails = {
     }, 
     Battery :{
         img :  'https://vehiclecare.in/images/service/batteriessupport.svg',
-        title : "Battery changing" ,
+        title : "Battery Charging" ,
         u1:"/",
         u2:"/",
         u3:"/",
